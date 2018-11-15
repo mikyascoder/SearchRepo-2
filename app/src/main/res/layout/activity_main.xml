@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <EditText
+          android:id="@+id/searchbox"
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:layout_marginLeft="10dp"
+
+          android:layout_weight="10"
+          android:inputType="text"
+          android:hint="search"
+
+          android:textSize="20sp"
+          tools:hint="Search here" />
+
+      <Button
+          android:id="@+id/searchbutton"
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:layout_gravity="left"
+          android:gravity="left"
+          android:text="Search "
+
+          android:textSize="15sp"
+
+
+          />
+
+  </LinearLayout>
+
+
+  <ListView
+
+      android:id="@android:id/list"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+  </ListView>
+
+</LinearLayout>
